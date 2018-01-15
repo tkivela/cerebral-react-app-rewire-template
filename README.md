@@ -2,6 +2,11 @@
 
 Small React app template with everything you need.
 
+[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+
 **What's inside?**
 
 * `react`
@@ -26,8 +31,27 @@ will automagically hot reload you files whenever you make changes.
 
 ## Directory structure
 
+Majority of code lives in src directory:
 
+```
+src/
+├── components
+├── index.js
+└── modules
+    └── app
+        ├── actions
+        ├── computes
+        ├── index.js
+        └── signals
+```
 
+* components: React components
+* index.js: Root container component
+* modules: Cerebral modules, one example module called app included
+* modules/app/index.js: App initial state & signals 
+* modules/app/actions: Cerebral actions
+* modules/app/computes: Cerebral computes which calculate derived state entries
+* modules/app/signals: Cerebral signals
 
 ## Building for Production
 
