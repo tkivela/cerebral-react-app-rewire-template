@@ -1,5 +1,5 @@
 import { signal, state } from 'cerebral/tags'
-import {connect} from '@cerebral/react'
+import { connect } from '@cerebral/react'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -14,10 +14,10 @@ export default connect({
   buttonClicked: signal`pressMeButtonClicked`,
   buttonHasBeenClicked: state`buttonHasBeenClicked`
 },
- ({buttonClicked, buttonHasBeenClicked}) => {
-   const buttonCaption = buttonHasBeenClicked ? 'You clicked me!' : 'Click me'
-   return (
-     <Wrapper onClick={() => { buttonClicked() }}>{buttonCaption}</Wrapper>
-   )
- }
+  ({ buttonClicked, buttonHasBeenClicked }) => {
+    const buttonCaption = buttonHasBeenClicked ? 'You clicked me!' : 'Click me'
+    return (
+      <Wrapper onClick={() => { buttonClicked() }}>{buttonCaption}</Wrapper>
+    )
+  }
 )

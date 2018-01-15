@@ -1,5 +1,5 @@
-import {connect} from '@cerebral/react'
-import {state, signal} from 'cerebral/tags'
+import { connect } from '@cerebral/react'
+import { state, signal } from 'cerebral/tags'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -17,21 +17,22 @@ const Wrapper = styled.div`
   text-align: center;
 `
 
-export default connect({
-  title: state`title`,
-  inputChanged: signal`inputChanged`
-},
- ({title, inputChanged}) => {
-   return (
-     <Wrapper>
-       <Title />
-       <input
-         placeholder='Type your name'
-         onChange={(event) => inputChanged({inputValue: event.target.value})}
+export default connect(
+  {
+    title: state`title`,
+    inputChanged: signal`inputChanged`
+  },
+  ({ title, inputChanged }) => {
+    return (
+      <Wrapper>
+        <Title />
+        <input
+          placeholder='Type your name'
+          onChange={event => inputChanged({ inputValue: event.target.value })}
         />
-       <InputLength />
-       <PressMeButton />
-     </Wrapper>
-   )
- }
+        <InputLength />
+        <PressMeButton />
+      </Wrapper>
+    )
+  }
 )

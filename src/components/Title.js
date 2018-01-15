@@ -1,5 +1,5 @@
-import {connect} from '@cerebral/react'
-import {state} from 'cerebral/tags'
+import { connect } from '@cerebral/react'
+import { state } from 'cerebral/tags'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -12,9 +12,9 @@ const TitleHeader = styled.h1`
 export default connect({
   title: state`title`
 },
- ({title, inputChanged}) => {
-   return (
-     <TitleHeader>{title}</TitleHeader>
-   )
- }
+  ({ title, inputChanged }) => {
+    return (
+      <TitleHeader>{title}</TitleHeader>
+    )
+  }
 )

@@ -1,4 +1,4 @@
-import {Controller} from 'cerebral'
+import { Controller } from 'cerebral'
 
 import app from './modules/app'
 

@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import {Container} from '@cerebral/react'
+import { Container } from '@cerebral/react'
 import React from 'react'
 import ReactDOM from 'react-dom'
 

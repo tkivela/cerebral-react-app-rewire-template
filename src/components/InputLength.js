@@ -1,4 +1,4 @@
-import {connect} from '@cerebral/react'
+import { connect } from '@cerebral/react'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -12,9 +12,9 @@ const Wrapper = styled.h2`
 export default connect({
   inputLength: inputLengthCompute
 },
- ({inputLength}) => {
-   return (
-     <Wrapper>Greeting length: {inputLength}</Wrapper>
-   )
- }
+  ({ inputLength }) => {
+    return (
+      <Wrapper>Greeting length: {inputLength}</Wrapper>
+    )
+  }
 )

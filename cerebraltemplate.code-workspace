@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"[javascript]": {
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true
+		}
+	},
+}
