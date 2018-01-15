@@ -16,9 +16,11 @@
     "test": "./node_modules/.bin/standard && react-app-rewired test --env=jsdom",
     "eject": "react-app-rewired eject",
     "lint": "./node_modules/.bin/standard",
-    "lint-fix": "./node_modules/.bin/standard --fix"
+    "lint-fix": "prettier-standard 'src/**/*.js' && ./node_modules/.bin/standard --fix",
+    "format": "prettier-standard 'src/**/*.js'"
   },
   "devDependencies": {
+    "prettier-standard": "^8.0.0",
     "react-app-rewire-styled-components": "^3.0.0",
     "react-app-rewired": "^1.4.0",
     "standard": "^10.0.3"

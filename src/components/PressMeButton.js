@@ -10,14 +10,21 @@ const Wrapper = styled.div`
   background-color: lightblue;
 `
 
-export default connect({
-  buttonClicked: signal`pressMeButtonClicked`,
-  buttonHasBeenClicked: state`buttonHasBeenClicked`
-},
+export default connect(
+  {
+    buttonClicked: signal`pressMeButtonClicked`,
+    buttonHasBeenClicked: state`buttonHasBeenClicked`
+  },
   ({ buttonClicked, buttonHasBeenClicked }) => {
     const buttonCaption = buttonHasBeenClicked ? 'You clicked me!' : 'Click me'
     return (
-      <Wrapper onClick={() => { buttonClicked() }}>{buttonCaption}</Wrapper>
+      <Wrapper
+        onClick={() => {
+          buttonClicked()
+        }}
+      >
+        {buttonCaption}
+      </Wrapper>
     )
   }
 )

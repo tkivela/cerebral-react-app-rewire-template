@@ -9,12 +9,11 @@ const TitleHeader = styled.h1`
   color: #aa44aa;
 `
 
-export default connect({
-  title: state`title`
-},
+export default connect(
+  {
+    title: state`title`
+  },
   ({ title, inputChanged }) => {
-    return (
-      <TitleHeader>{title}</TitleHeader>
-    )
+    return <TitleHeader>{title}</TitleHeader>
   }
 )

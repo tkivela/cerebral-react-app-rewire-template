@@ -9,12 +9,11 @@ const Wrapper = styled.h2`
   color: black;
 `
 
-export default connect({
-  inputLength: inputLengthCompute
-},
+export default connect(
+  {
+    inputLength: inputLengthCompute
+  },
   ({ inputLength }) => {
-    return (
-      <Wrapper>Greeting length: {inputLength}</Wrapper>
-    )
+    return <Wrapper>Greeting length: {inputLength}</Wrapper>
   }
 )

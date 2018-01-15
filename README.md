@@ -8,7 +8,7 @@ Small React app template with everything you need.
 * `cerebral`
 * `styled-components`
 
-Setup is based on create-react-app but uses react-app-rewire for customization options.
+Setup is based on create-react-app (not ejected) and uses react-app-rewire for customization options.
 
 ## Getting started
 
@@ -53,7 +53,7 @@ Check for linting errors with
 yarn lint
 ```
 
-Fix linting errors with
+Fix linting errors (& format code with prettier-standard) with
 ```
 yarn lint-fix
 ```

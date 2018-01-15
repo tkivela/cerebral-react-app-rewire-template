@@ -8,7 +8,10 @@ import controller from '../controller'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<Container controller={controller}>
-    <App />
-  </Container>, div)
+  ReactDOM.render(
+    <Container controller={controller}>
+      <App />
+    </Container>,
+    div
+  )
 })
