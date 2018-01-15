@@ -15,7 +15,7 @@ Setup is based on create-react-app but uses react-app-rewire for customization o
 Clone and install deps
 
 ```
-git clone git@github.com:tokivela/cerebraltemplate.git
+git clone git@github.com:tkivela/cerebraltemplate.git
 cd cerebraltemplate
 yarn
 yarn start
