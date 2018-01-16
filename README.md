@@ -2,7 +2,6 @@
 
 Small React app template with everything you need.
 
-[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
@@ -11,7 +10,10 @@ Small React app template with everything you need.
 
 * `react`
 * `cerebral`
-* `styled-components`
+* `emotion`
+and code styles with
+* `standard`
+* `prettier-standard`
 
 Setup is based on create-react-app (not ejected) and uses react-app-rewire for customization options.
 
@@ -82,7 +84,6 @@ Fix linting errors (& format code with prettier-standard) with
 yarn lint-fix
 ```
 
+## Debugging
 
-## Styled-components
-
-I've included react-app-rewire-styled-components which basically allows nicer experience debugging CSS styles created by Styled-components while preserving create-react-app functionality otherwise.
+By using Cerebral debugger (https://github.com/cerebral/cerebral-debugger/releases) you can debug state changes & signals by attaching it to port 8585 (port can be changed from controller.js if needed). Otherwise normal debugging (with sourcemaps) can be done from browser's devtools.

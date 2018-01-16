@@ -1,11 +1,11 @@
 import { signal, state } from 'cerebral/tags'
 import { connect } from '@cerebral/react'
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'react-emotion'
 
 // Create a <Wrapper> react component that renders a <div> with
 // some padding and a papayawhip background
-const Wrapper = styled.div`
+const Wrapper = styled('div')`
   color: black;
   background-color: lightblue;
 `

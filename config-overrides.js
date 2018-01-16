@@ -1,7 +1,6 @@
-const rewireStyledComponents = require('react-app-rewire-styled-components')
+const rewireEmotion = require('react-app-rewire-emotion')
 
 /* config-overrides.js */
 module.exports = function override (config, env) {
-  config = rewireStyledComponents(config, env)
-  return config
+  return rewireEmotion(config, env, { inline: true })
 }
