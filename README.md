@@ -11,6 +11,7 @@ Small React app template with everything you need.
 * `react`
 * `cerebral`
 * `emotion`
+
 and code styles with
 * `standard`
 * `prettier-standard`
