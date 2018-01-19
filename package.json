@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@cerebral/react": "^3.0.1",
-    "cerebral": "^4.0.1",
+    "@cerebral/react": "^3.1.0",
+    "cerebral": "^4.1.0",
     "emotion": "^8.0.12",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
