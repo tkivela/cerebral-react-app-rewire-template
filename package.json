@@ -24,7 +24,7 @@
     "babel-plugin-emotion": "^8.0.2",
     "prettier-standard": "^8.0.0",
     "react-app-rewire-emotion": "^3.0.0",
-    "react-app-rewired": "^1.4.0",
+    "react-app-rewired": "^1.4.1",
     "standard": "^10.0.3"
   }
 }
