@@ -69,11 +69,11 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@cerebral/react@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@cerebral/react/-/react-3.1.0.tgz#5d9bdd7e435372b4b9f9ce3bb842ff63aaae789b"
+"@cerebral/react@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@cerebral/react/-/react-3.1.1.tgz#25ee0366418ea781c22bf5b47bcaf0d38608caf6"
   dependencies:
-    cerebral "^4.1.0"
+    cerebral "^4.1.1"
 
 "@sheerun/eslint-config-standard@^10.2.1":
   version "10.2.1"
@@ -596,12 +596,6 @@ babel-loader@7.1.2:
     loader-utils "^1.0.2"
     mkdirp "^0.5.1"
 
-babel-macros@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/babel-macros/-/babel-macros-1.2.0.tgz#39e47ed6d286d4a98f1948d8bab45dac17e4e2d4"
-  dependencies:
-    cosmiconfig "3.1.0"
-
 babel-messages@^6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-messages/-/babel-messages-6.23.0.tgz#f3cdf4703858035b2a2951c6ec5edf6c62f2630e"
@@ -622,15 +616,15 @@ babel-plugin-dynamic-import-node@1.1.0:
     babel-template "^6.26.0"
     babel-types "^6.26.0"
 
-babel-plugin-emotion@^8.0.12, babel-plugin-emotion@^8.0.2:
-  version "8.0.12"
-  resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-8.0.12.tgz#2ed844001416b0ae2ff787a06b1804ec5f531c89"
+babel-plugin-emotion@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-emotion/-/babel-plugin-emotion-9.0.1.tgz#1c1ec14a5d6f40c64bd68e805f074fea60a580a7"
   dependencies:
     "@babel/helper-module-imports" "7.0.0-beta.32"
-    babel-macros "^1.2.0"
+    babel-plugin-macros "^2.0.0"
     babel-plugin-syntax-jsx "^6.18.0"
     convert-source-map "^1.5.0"
-    emotion-utils "^8.0.12"
+    emotion-utils "^9.0.1"
     find-root "^1.1.0"
     source-map "^0.5.7"
     touch "^1.0.0"
@@ -646,6 +640,12 @@ babel-plugin-istanbul@^4.0.0:
 babel-plugin-jest-hoist@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-20.0.3.tgz#afedc853bd3f8dc3548ea671fbe69d03cc2c1767"
+
+babel-plugin-macros@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-2.1.0.tgz#e978fd4c5ee9cca73a809c176524c2e9f4dcccbf"
+  dependencies:
+    cosmiconfig "^4.0.0"
 
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
@@ -1398,9 +1398,9 @@ center-align@^0.1.1:
     align-text "^0.1.3"
     lazy-cache "^1.0.3"
 
-cerebral@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/cerebral/-/cerebral-4.1.0.tgz#73fd46124149d0c38b7c32edb35c42547967bb83"
+cerebral@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/cerebral/-/cerebral-4.1.1.tgz#6fe8748b744602ea33460dbac39c432547a05a87"
   dependencies:
     es6-error "^4.0.2"
     function-tree "^3.1.0"
@@ -1682,15 +1682,6 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-cosmiconfig@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-3.1.0.tgz#640a94bf9847f321800403cd273af60665c73397"
-  dependencies:
-    is-directory "^0.3.1"
-    js-yaml "^3.9.0"
-    parse-json "^3.0.0"
-    require-from-string "^2.0.1"
-
 cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-2.2.2.tgz#6173cebd56fac042c1f4390edf7af6c07c7cb892"
@@ -1703,12 +1694,35 @@ cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
     parse-json "^2.2.0"
     require-from-string "^1.1.0"
 
+cosmiconfig@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-4.0.0.tgz#760391549580bbd2df1e562bc177b13c290972dc"
+  dependencies:
+    is-directory "^0.3.1"
+    js-yaml "^3.9.0"
+    parse-json "^4.0.0"
+    require-from-string "^2.0.1"
+
 create-ecdh@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.0.tgz#888c723596cdf7612f6498233eebd7a35301737d"
   dependencies:
     bn.js "^4.1.0"
     elliptic "^6.0.0"
+
+create-emotion-styled@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/create-emotion-styled/-/create-emotion-styled-9.0.1.tgz#70be09fcd0735ec88459ffbfc8128eb3f5690341"
+  dependencies:
+    emotion-utils "^9.0.1"
+
+create-emotion@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/create-emotion/-/create-emotion-9.0.1.tgz#fe9ea0e0f74c13d7d1e64b3eede37e64fbc89b89"
+  dependencies:
+    emotion-utils "^9.0.1"
+    stylis "^3.3.2"
+    stylis-rule-sheet "^0.0.5"
 
 create-error-class@^3.0.0:
   version "3.0.2"
@@ -2144,9 +2158,9 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv-expand@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-4.0.1.tgz#68fddc1561814e0a10964111057ff138ced7d7a8"
+dotenv-expand@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-4.2.0.tgz#def1f1ca5d6059d24a766e587942c21106ce1275"
 
 dotenv@4.0.0, dotenv@^4.0.0:
   version "4.0.0"
@@ -2194,18 +2208,16 @@ emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
 
-emotion-utils@^8.0.12:
-  version "8.0.12"
-  resolved "https://registry.yarnpkg.com/emotion-utils/-/emotion-utils-8.0.12.tgz#5e0fd72db3008f26ce4f80b1972df08841df2168"
+emotion-utils@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/emotion-utils/-/emotion-utils-9.0.1.tgz#db1034410d8ac4e399845d346471c3f2db5124d7"
 
-emotion@^8.0.12:
-  version "8.0.12"
-  resolved "https://registry.yarnpkg.com/emotion/-/emotion-8.0.12.tgz#03de11ce26b1b2401c334b94d438652124c514c6"
+emotion@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/emotion/-/emotion-9.0.1.tgz#e6e8aaa6cfb703c4652de222cba87aa5bfeeae39"
   dependencies:
-    babel-plugin-emotion "^8.0.12"
-    emotion-utils "^8.0.12"
-    stylis "^3.3.2"
-    stylis-rule-sheet "^0.0.5"
+    babel-plugin-emotion "^9.0.1"
+    create-emotion "^9.0.1"
 
 encodeurl@~1.0.1:
   version "1.0.2"
@@ -3024,14 +3036,7 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
-fsevents@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.1.2.tgz#3282b713fb3ad80ede0e9fcf4611b5aa6fc033f4"
-  dependencies:
-    nan "^2.3.0"
-    node-pre-gyp "^0.6.36"
-
-fsevents@^1.0.0:
+fsevents@^1.0.0, fsevents@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.1.3.tgz#11f82318f5fe7bb2cd22965a108e9306208216d8"
   dependencies:
@@ -4788,7 +4793,7 @@ node-notifier@^5.0.2:
     shellwords "^0.1.1"
     which "^1.3.0"
 
-node-pre-gyp@^0.6.36, node-pre-gyp@^0.6.39:
+node-pre-gyp@^0.6.39:
   version "0.6.39"
   resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.39.tgz#c00e96860b23c0e1420ac7befc5044e1d78d8649"
   dependencies:
@@ -5076,12 +5081,6 @@ parse-json@^2.2.0:
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-2.2.0.tgz#f480f40434ef80741f8469099f8dea18f55a4dc9"
   dependencies:
     error-ex "^1.2.0"
-
-parse-json@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-3.0.0.tgz#fa6f47b18e23826ead32f263e744d0e1e847fb13"
-  dependencies:
-    error-ex "^1.3.1"
 
 parse-json@^4.0.0:
   version "4.0.0"
@@ -5818,20 +5817,20 @@ react-dom@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-emotion@^8.0.12:
-  version "8.0.12"
-  resolved "https://registry.yarnpkg.com/react-emotion/-/react-emotion-8.0.12.tgz#3dd94c151197e2e3399e34e3e118df141b5ebb7b"
+react-emotion@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/react-emotion/-/react-emotion-9.0.1.tgz#4dfb29afdbc1658ede6911d749ca189737548240"
   dependencies:
-    babel-plugin-emotion "^8.0.12"
-    emotion-utils "^8.0.12"
+    babel-plugin-emotion "^9.0.1"
+    create-emotion-styled "^9.0.1"
 
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
 
-react-scripts@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.1.0.tgz#0c94b2b2e14cff2dad8919397901b5edebeba511"
+react-scripts@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.1.1.tgz#279d449f7311fed910506987a1ade014027788a8"
   dependencies:
     autoprefixer "7.1.6"
     babel-core "6.26.0"
@@ -5844,7 +5843,7 @@ react-scripts@^1.1.0:
     chalk "1.1.3"
     css-loader "0.28.7"
     dotenv "4.0.0"
-    dotenv-expand "4.0.1"
+    dotenv-expand "4.2.0"
     eslint "4.10.0"
     eslint-config-react-app "^2.1.0"
     eslint-loader "1.9.0"
@@ -5871,7 +5870,7 @@ react-scripts@^1.1.0:
     webpack-manifest-plugin "1.3.2"
     whatwg-fetch "2.0.3"
   optionalDependencies:
-    fsevents "1.1.2"
+    fsevents "^1.1.3"
 
 react@^16.2.0:
   version "16.2.0"
